@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body{
+    height: 100%;
+    background-image: url("images/bg-intro-mobile.png");
+    background-color: hsl(0, 100%, 74%);
+    font-family: 'Poppins', sans-serif;
+}
+.text{
+    color: white;
+    text-align: center;
+}
+.text h1{
+    font-size: 25px;
+    margin-top: 70px;
+}
+.text p{
+    font-size: 16px;
+}
+.try{
+    text-align: center;
+    background-color: hsl(248, 32%, 49%);
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin: 5px 15px;
+    color: white;
+    border-radius: 10px;
+    font-size: 12px;
+}
+form{
+    background-color: white;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+form input{
+    height: 35px;
+    border-radius: 5px;
+    border: 0.8px solid hsl(246, 25%, 77%);
+    padding-left: 12px;
+}
+form p{
+    font-size: 8px;
+    text-align: end;
+    color: hsl(0, 100%, 74%);
+    visibility: hidden;
+}
+input[type="submit"]{
+    height: 50px;
+    border: none;
+    background-color: hsl(154, 59%, 51%);
+    color: white;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+input[type="submit"]:hover{
+    transform: translateX(2px);
+    transform: translateY(2px);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+}
+.terms{
+    color: hsl(246, 25%, 77%);
+    font-size: 10px;
+    text-align: center;
+    padding-left: 18px;
+    padding-right: px;
+    font-weight: 500;
+    visibility: visible;
+}
+.terms span{
+    font-weight: 600;
+    color: hsl(0, 100%, 74%);
+}
+.error img{
+    position: relative;
+    top: -60px;
+    left: 400px;
+    visibility: hidden;
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    color: white;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (min-width:1000px) {
+    html{
+        height: 100%;
+    }
+    body{
+        height: 100%;
+    }
+    main{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        justify-content: space-evenly;
+        height: 90%;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .text{
+        text-align: left;
+        width: 480px;
+    }
+    .text h1{
+        font-size: 50px;
+    }
+    .text p{
+        font-size: 18px;
+
+    }
+    form{
+        width: 450px;
+    }
+}
