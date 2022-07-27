@@ -5,7 +5,10 @@ const msgEmail = document.querySelector("#email-error");
 const iconEmail = document.querySelector("#email-icon");
 const passeword = document.querySelector("passeword");
 const button = document.querySelector("submit");
-
+const iconFirstName = document.querySelector("#first-name");
+const iconLastName = document.querySelector("#last-name");
+const iconPassword = document.querySelector("#icon-passeword-error");
+  //invalid email
 function ValidateEmail(mail) {
     var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     if (mail.match(mailformat)) {
@@ -27,3 +30,11 @@ function ValidateEmail(mail) {
         msgEmail.style.visibility = "hidden";
     }
   }
+  //empty input
+  function IsEmpty(data) {
+  if (document.forms['frm'].data.value === "") {
+    return false;
+  }
+    return true;
+}
+
